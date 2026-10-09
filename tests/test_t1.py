@@ -20,7 +20,7 @@ def fibo(n):
     
 
 
-@pytest.mask.parametrize("n,ans",[(-1,None),(0,None),(5,3),(6,5)])
+@pytest.mark.parametrize("n,ans",[(-1,None),(0,None),(5,3),(6,5)])
 def fibo_test(n,ans):
     assert fibo(n) == ans
 
