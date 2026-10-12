@@ -5,7 +5,7 @@ def fibo(n):
         return None
     elif n == 1:
         return 0
-    elif n == 1:
+    elif n == 2:
         return 1
     else:
         x = 0
@@ -21,6 +21,6 @@ def fibo(n):
 
 
 @pytest.mark.parametrize("n,ans",[(-1,None),(0,None),(5,3),(6,5)])
-def fibo_test(n,ans):
+def test_fibo(n,ans):
     assert fibo(n) == ans
 
